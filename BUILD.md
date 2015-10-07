@@ -1,18 +1,18 @@
 # How to turn these files into a book
 
-In this repostitory, you will find the chapters written in 
+In this repostitory, you will find the chapters written in
 [Markdown](https://daringfireball.net/projects/markdown/). Markdown files are
 pretty readable, but you may well want to convert the source files into other
-formats. There is a Makefile that you can use you do thay, but you will need
+formats. There is a Makefile that you can use you do that, but you will need
 various other tools installed. This file explains which tools are required,
-what they are required for and how o get them.
+what they are required for and how to get them.
 
 ## Make
 
 [Make](https://en.wikipedia.org/wiki/Make_%28software%29) is the standard Unix
 tool for controlling how to build files from other files. If you're using a
 system based on Unix (that includes Linux, BSD and OSX) then you will almost
-certainly alread have Make installed. If you're using Windows, then I think
+certainly already have Make installed. If you're using Windows, then I think
 that Microsoft have a similar tool called `nmake` which you can almost
 certainly download from one of their many web sites.
 
@@ -33,6 +33,9 @@ For OSX and Windows users, there are installable packages of the latest
 version of Pandoc available from their
 [Github repository](https://github.com/jgm/pandoc/releases/latest). Simply
 download the correct file and double-click it.
+
+Or if you have the OS X package manager homebrew, http://brew.sh, installed in OS X
+you can type "brew install pandoc" in the terminal.
 
 Once you have Make and Pandoc installed, you can build an EPUB of the book by
 opening a terminal, changing to the directory where you have checked out a
@@ -75,7 +78,7 @@ our Make system supports building a PDF too.
 Building a PDF uses another tool called [Calibre](http://calibre-ebook.com/)
 which you will need to install if you want to make a PDF.
 
-For Linux users, Calibre will be available in your system's package repository. 
+For Linux users, Calibre will be available in your system's package repository.
 If you're using a RedHat/Fedora/Centos system you can install it with `sudo
 install calibre`. For a Debian/Ubuntu system, the equivalent command is `sudo
 apt-get install calibre`. If you're using any other kind of Linux then I'm
